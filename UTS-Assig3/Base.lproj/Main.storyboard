@@ -50,11 +50,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="60" y="1"/>
         </scene>
-        <!--View Controller-->
+        <!--Select SubjectVC-->
         <scene sceneID="OJa-9R-hJh">
             <objects>
-                <viewController id="wkm-rG-df8" sceneMemberID="viewController">
+                <viewController id="wkm-rG-df8" customClass="SelectSubjectVC" customModule="UTS_Assig3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="emN-Lo-qeP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -82,6 +83,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="GO!"/>
                                 <connections>
+                                    <action selector="myGoButton:" destination="wkm-rG-df8" eventType="touchUpInside" id="cli-ha-82r"/>
                                     <segue destination="TW6-ns-JvL" kind="show" id="qtV-JB-nEd"/>
                                 </connections>
                             </button>
@@ -96,10 +98,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="K1j-eD-rbB"/>
                     </view>
+                    <connections>
+                        <outlet property="myPicker" destination="Q5d-tt-7Cb" id="hka-RH-tXP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S0K-Iw-w9v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="853.60000000000002" y="116.49175412293854"/>
+            <point key="canvasLocation" x="1086" y="814"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="Zkr-ER-dmK">
@@ -146,7 +151,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lq0-kp-1mG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1599" y="441"/>
+            <point key="canvasLocation" x="1953" y="691"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Bru-OV-iNI">
@@ -208,7 +213,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z2v-mf-bRC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2320.8000000000002" y="347.67616191904051"/>
+            <point key="canvasLocation" x="2794" y="45"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
