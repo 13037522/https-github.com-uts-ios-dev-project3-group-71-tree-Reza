@@ -12,7 +12,7 @@ class SelectSubjectVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
     @IBOutlet weak var myPicker: UIPickerView!
 
     var theSubjects: [aSubject] = []
-    
+    var selectedSubject: Int = 0
     override func viewDidLoad() {
         self.theSubjects = aSubject.defaultSubjects()
         self.myPicker.delegate = self
@@ -28,27 +28,23 @@ class SelectSubjectVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
         return theSubjects.count
     }
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+//        print(theSubjects[row].subjectID)
+        selectedSubject = theSubjects[row].subjectID
         return theSubjects[row].subjectName
     }
 
     @IBAction func myGoButton(_ sender: Any) {
     }
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "subject2questions" {
+            let myQuestionsVC = segue.destination as! myQuestionsTVC
+            myQuestionsVC.mySubjectID = selectedSubject
+        }
     }
-    */
-
 }
