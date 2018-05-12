@@ -38,6 +38,7 @@ struct aSubject: Codable {
         let subject7 = aSubject(subjectID: 34455, subjectName:  "Internet Programing")
         let subject8 = aSubject(subjectID: 111111, subjectName:  "Advanced Internet Programing")
         let subject9 = aSubject(subjectID: 35425, subjectName:  "Cyber Security")
-        return [subject1, subject2, subject3, subject4, subject5, subject6, subject7, subject8, subject9]
+        let subject10 = aSubject(subjectID: 23709, subjectName: "Economics for Management")
+        return [subject1, subject2, subject3, subject4, subject5, subject6, subject7, subject8, subject9, subject10]
     }
 }
