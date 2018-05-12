@@ -22,17 +22,20 @@ class theQuestionVC: UIViewController {
     @IBOutlet weak var correctAnswer: UILabel!
     @IBOutlet weak var answerCover: UIImageView!
 
-    var thisQuestion: aQuestion = aQuestion.randomQuestion()
+    var thisQuestion: aQuestion?
 
     override func viewDidLoad() {
-        questionTitle.text = thisQuestion.qTitle
-        theQuestion.text = thisQuestion.question
-        answerOne.setTitle(thisQuestion.answers[0], for: .normal)
-        answerTwo.setTitle(thisQuestion.answers[1], for: .normal)
-        answerThree.setTitle(thisQuestion.answers[2], for: .normal)
-        answerFour.setTitle(thisQuestion.answers[3], for: .normal)
-        correctAnswer.text = thisQuestion.answers[(thisQuestion.correctAnswer -  1)]
-        print(thisQuestion.answers[0])
+        if thisQuestion == nil {
+            thisQuestion = aQuestion.randomQuestion()
+        }
+        questionTitle.text = thisQuestion!.qTitle
+        theQuestion.text = thisQuestion!.question
+        answerOne.setTitle(thisQuestion!.answers[0], for: .normal)
+        answerTwo.setTitle(thisQuestion!.answers[1], for: .normal)
+        answerThree.setTitle(thisQuestion!.answers[2], for: .normal)
+        answerFour.setTitle(thisQuestion!.answers[3], for: .normal)
+        correctAnswer.text = thisQuestion!.answers[(thisQuestion!.correctAnswer -  1)]
+        print(thisQuestion!.answers[0])
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -45,7 +48,7 @@ class theQuestionVC: UIViewController {
     
     @IBAction func selectAnswer(_ sender: UIButton) {
         answerCover.isHidden = true
-        if sender.title(for: .normal) == thisQuestion.answers[(thisQuestion.correctAnswer -  1)] {
+        if sender.title(for: .normal) == thisQuestion!.answers[(thisQuestion!.correctAnswer -  1)] {
             correctAnswer.textColor = .green
         } else {
             correctAnswer.textColor = .red
