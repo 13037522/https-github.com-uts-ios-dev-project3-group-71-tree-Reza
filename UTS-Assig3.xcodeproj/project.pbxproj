@@ -60,7 +60,7 @@
 		4D31522620A41F520053727D /* myQuestionsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myQuestionsTVC.swift; sourceTree = "<group>"; };
 		4DE95B8E20A5257B003F770D /* theQuestionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = theQuestionVC.swift; sourceTree = "<group>"; };
 		D9CAFEF020AC1576001265F2 /* questionList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = questionList.swift; sourceTree = "<group>"; };
-		D9CAFEF220AC1581001265F2 /* Saves.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Saves.swift; path = "UTS-Assig3/Saves.swift"; sourceTree = "<group>"; };
+		D9CAFEF220AC1581001265F2 /* Saves.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Saves.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +91,6 @@
 		4D26B9A1209FFE47004D534C = {
 			isa = PBXGroup;
 			children = (
-				D9CAFEF220AC1581001265F2 /* Saves.swift */,
 				4D26B9AC209FFE47004D534C /* UTS-Assig3 */,
 				4D26B9C1209FFE47004D534C /* UTS-Assig3Tests */,
 				4D26B9CC209FFE47004D534C /* UTS-Assig3UITests */,
@@ -112,6 +111,7 @@
 		4D26B9AC209FFE47004D534C /* UTS-Assig3 */ = {
 			isa = PBXGroup;
 			children = (
+				D9CAFEF220AC1581001265F2 /* Saves.swift */,
 				D9CAFEF020AC1576001265F2 /* questionList.swift */,
 				4D26B9AD209FFE47004D534C /* AppDelegate.swift */,
 				4D26B9AF209FFE47004D534C /* ViewController.swift */,
