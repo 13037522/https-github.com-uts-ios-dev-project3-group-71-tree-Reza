@@ -18,13 +18,10 @@ class QuestionList {
     }
     
     static func getInstance() -> QuestionList {
-        if instance != nil {
-            return instance!
-        }
-        else {
+        if instance == nil {
             instance = QuestionList()
-            return instance!
         }
+        return instance!
     }
     
     static func randomQuestion() -> aQuestion {

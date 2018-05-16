@@ -10,9 +10,22 @@ import Foundation
 
 // For saving user answers on questions
 class Saves {
+    static var instance: Saves?
     var answers: [[Bool]]
     
-    init() {
+    private init() {
         answers = []
+    }
+    
+    static func getInstance() -> Saves {
+        if instance == nil {
+            instance = Saves()
+        }
+        return instance!
+    }
+    
+    // TODO: add default saves
+    static func defaultSaves() -> [[Bool]]  {
+        return []
     }
 }
