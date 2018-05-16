@@ -18,6 +18,7 @@
 		4D31522320A40CA10053727D /* SelectSubjectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D31522220A40CA10053727D /* SelectSubjectVC.swift */; };
 		4D31522520A41C790053727D /* aSubjectStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D31522420A41C790053727D /* aSubjectStruct.swift */; };
 		4D31522720A41F520053727D /* myQuestionsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D31522620A41F520053727D /* myQuestionsTVC.swift */; };
+		4D48BE8720AC163C0031EE6D /* myNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D48BE8620AC163C0031EE6D /* myNotifications.swift */; };
 		4DE95B8F20A5257B003F770D /* theQuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE95B8E20A5257B003F770D /* theQuestionVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		4D31522220A40CA10053727D /* SelectSubjectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSubjectVC.swift; sourceTree = "<group>"; };
 		4D31522420A41C790053727D /* aSubjectStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aSubjectStruct.swift; sourceTree = "<group>"; };
 		4D31522620A41F520053727D /* myQuestionsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myQuestionsTVC.swift; sourceTree = "<group>"; };
+		4D48BE8620AC163C0031EE6D /* myNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myNotifications.swift; sourceTree = "<group>"; };
 		4DE95B8E20A5257B003F770D /* theQuestionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = theQuestionVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +111,7 @@
 			children = (
 				4D26B9AD209FFE47004D534C /* AppDelegate.swift */,
 				4D26B9AF209FFE47004D534C /* ViewController.swift */,
+				4D48BE8620AC163C0031EE6D /* myNotifications.swift */,
 				4D26B9B1209FFE47004D534C /* Main.storyboard */,
 				4DE95B8E20A5257B003F770D /* theQuestionVC.swift */,
 				4D31522620A41F520053727D /* myQuestionsTVC.swift */,
@@ -281,6 +284,7 @@
 				4D26B9AE209FFE47004D534C /* AppDelegate.swift in Sources */,
 				4DE95B8F20A5257B003F770D /* theQuestionVC.swift in Sources */,
 				4D31522720A41F520053727D /* myQuestionsTVC.swift in Sources */,
+				4D48BE8720AC163C0031EE6D /* myNotifications.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +450,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KGGLJV4W5L;
 				INFOPLIST_FILE = "UTS-Assig3/Info.plist";
@@ -461,6 +466,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KGGLJV4W5L;
 				INFOPLIST_FILE = "UTS-Assig3/Info.plist";
