@@ -10,17 +10,17 @@ import UIKit
 
 class myQuestionsTVC: UITableViewController {
     var mySubjectID: Int = 35406
-    var currentQuestion: aQuestion = aQuestion.randomQuestion()
+    var currentQuestion: aQuestion = QuestionList.randomQuestion()
 
     @IBOutlet var thisTV: UITableView!
     @IBOutlet weak var thisCell: UITableViewCell!
     
-    var theseQuestions: [aQuestion] = aQuestion.defaultQuestions()
+    var theseQuestions: [aQuestion] = QuestionList.defaultQuestions()
     
     override func viewDidLoad() {
         print(mySubjectID)
         thisTV.dataSource = self
-        theseQuestions = aQuestion.defaultQuestions()
+        theseQuestions = QuestionList.defaultQuestions()
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
