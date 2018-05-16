@@ -10,5 +10,9 @@ import Foundation
 
 // For saving user answers on questions
 class Saves {
+    var answers: [[Bool]]
     
+    init() {
+        answers = []
+    }
 }
