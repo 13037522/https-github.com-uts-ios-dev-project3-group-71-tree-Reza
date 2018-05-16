@@ -19,6 +19,8 @@
 		4D31522520A41C790053727D /* aSubjectStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D31522420A41C790053727D /* aSubjectStruct.swift */; };
 		4D31522720A41F520053727D /* myQuestionsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D31522620A41F520053727D /* myQuestionsTVC.swift */; };
 		4DE95B8F20A5257B003F770D /* theQuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE95B8E20A5257B003F770D /* theQuestionVC.swift */; };
+		D9CAFEF120AC1576001265F2 /* questionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CAFEF020AC1576001265F2 /* questionList.swift */; };
+		D9CAFEF320AC1582001265F2 /* Saves.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CAFEF220AC1581001265F2 /* Saves.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		4D31522420A41C790053727D /* aSubjectStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aSubjectStruct.swift; sourceTree = "<group>"; };
 		4D31522620A41F520053727D /* myQuestionsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myQuestionsTVC.swift; sourceTree = "<group>"; };
 		4DE95B8E20A5257B003F770D /* theQuestionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = theQuestionVC.swift; sourceTree = "<group>"; };
+		D9CAFEF020AC1576001265F2 /* questionList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = questionList.swift; sourceTree = "<group>"; };
+		D9CAFEF220AC1581001265F2 /* Saves.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Saves.swift; path = "UTS-Assig3/Saves.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 		4D26B9A1209FFE47004D534C = {
 			isa = PBXGroup;
 			children = (
+				D9CAFEF220AC1581001265F2 /* Saves.swift */,
 				4D26B9AC209FFE47004D534C /* UTS-Assig3 */,
 				4D26B9C1209FFE47004D534C /* UTS-Assig3Tests */,
 				4D26B9CC209FFE47004D534C /* UTS-Assig3UITests */,
@@ -107,6 +112,7 @@
 		4D26B9AC209FFE47004D534C /* UTS-Assig3 */ = {
 			isa = PBXGroup;
 			children = (
+				D9CAFEF020AC1576001265F2 /* questionList.swift */,
 				4D26B9AD209FFE47004D534C /* AppDelegate.swift */,
 				4D26B9AF209FFE47004D534C /* ViewController.swift */,
 				4D26B9B1209FFE47004D534C /* Main.storyboard */,
@@ -203,7 +209,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Asher;
 				TargetAttributes = {
 					4D26B9A9209FFE47004D534C = {
@@ -275,9 +281,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D31522520A41C790053727D /* aSubjectStruct.swift in Sources */,
+				D9CAFEF120AC1576001265F2 /* questionList.swift in Sources */,
 				4D31522120A40AEF0053727D /* aQuestion.swift in Sources */,
 				4D31522320A40CA10053727D /* SelectSubjectVC.swift in Sources */,
 				4D26B9B0209FFE47004D534C /* ViewController.swift in Sources */,
+				D9CAFEF320AC1582001265F2 /* Saves.swift in Sources */,
 				4D26B9AE209FFE47004D534C /* AppDelegate.swift in Sources */,
 				4DE95B8F20A5257B003F770D /* theQuestionVC.swift in Sources */,
 				4D31522720A41F520053727D /* myQuestionsTVC.swift in Sources */,
@@ -349,6 +357,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -356,6 +365,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -406,6 +416,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -413,6 +424,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -447,7 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KGGLJV4W5L;
+				DEVELOPMENT_TEAM = YPJGN89F93;
 				INFOPLIST_FILE = "UTS-Assig3/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "au.edu.uts.student.asher-lee.UTS-Assig3";
@@ -462,7 +474,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KGGLJV4W5L;
+				DEVELOPMENT_TEAM = YPJGN89F93;
 				INFOPLIST_FILE = "UTS-Assig3/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "au.edu.uts.student.asher-lee.UTS-Assig3";

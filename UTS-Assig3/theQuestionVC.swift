@@ -26,7 +26,7 @@ class theQuestionVC: UIViewController {
 
     override func viewDidLoad() {
         if thisQuestion == nil {
-            thisQuestion = aQuestion.randomQuestion()
+            thisQuestion = QuestionList.randomQuestion()
         }
         questionTitle.text = thisQuestion!.qTitle
         theQuestion.text = thisQuestion!.question
