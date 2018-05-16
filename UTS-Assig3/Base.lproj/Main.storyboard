@@ -198,7 +198,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="THE CORRECT ANSWER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URJ-4H-9TQ">
-                                <rect key="frame" x="77" y="551" width="189" height="21"/>
+                                <rect key="frame" x="16" y="551" width="343" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -217,6 +217,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2c-5e-DoP">
+                                <rect key="frame" x="138" y="617" width="98" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next Question"/>
+                                <connections>
+                                    <segue destination="JVF-ur-Eu8" kind="show" id="8nt-HL-LuR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="8eW-IA-kcJ"/>
@@ -228,6 +236,7 @@
                         <outlet property="answerThree" destination="GLs-kP-bCP" id="5D6-b5-WoL"/>
                         <outlet property="answerTwo" destination="Fzc-yq-tY5" id="hcC-XW-yKb"/>
                         <outlet property="correctAnswer" destination="URJ-4H-9TQ" id="0bw-3b-oel"/>
+                        <outlet property="nextQuestionButton" destination="g2c-5e-DoP" id="0PQ-kE-BGQ"/>
                         <outlet property="questionTitle" destination="Cbo-ce-09j" id="VUG-9g-VV5"/>
                         <outlet property="theQuestion" destination="aU6-mF-vTn" id="Q1U-UK-lPI"/>
                     </connections>

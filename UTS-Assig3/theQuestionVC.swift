@@ -22,6 +22,8 @@ class theQuestionVC: UIViewController {
     @IBOutlet weak var correctAnswer: UILabel!
     @IBOutlet weak var answerCover: UIImageView!
 
+    @IBOutlet weak var nextQuestionButton: UIButton!
+    
     var thisQuestion: aQuestion?
 
     override func viewDidLoad() {
@@ -47,6 +49,13 @@ class theQuestionVC: UIViewController {
     }
     
     @IBAction func selectAnswer(_ sender: UIButton) {
+        nextQuestionButton.isHidden = false
+        
+        answerOne.isEnabled = false
+        answerTwo.isEnabled = false
+        answerThree.isEnabled = false
+        answerFour.isEnabled = false
+        
         answerCover.isHidden = true
         if sender.title(for: .normal) == thisQuestion!.answers[(thisQuestion!.correctAnswer -  1)] {
             correctAnswer.textColor = .green
