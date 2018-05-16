@@ -37,7 +37,7 @@ class QuestionList {
         let randomIndex = Int(arc4random_uniform(UInt32(instance!.questionList.count)))
         
         defaultQuestion = instance!.questionList[randomIndex]
-        //print(defaultQuestion)
+
         return defaultQuestion
     }
     
